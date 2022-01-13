@@ -4,6 +4,7 @@ public class Bank {
         System.out.println("Денег на счету " + myAccount.getMoney() + " рублей");
         myAccount.setMoney(234);
         System.out.println("Теперь денег " + myAccount.getMoney() + " рублей");
+        System.out.println("Классная задачка");
 
 
     }
