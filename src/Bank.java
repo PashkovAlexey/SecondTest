@@ -5,6 +5,7 @@ public class Bank {
         myAccount.setMoney(234);
         System.out.println("Теперь денег " + myAccount.getMoney() + " рублей");
 
+        Bandit madDog = new Bandit();
 
     }
 }
