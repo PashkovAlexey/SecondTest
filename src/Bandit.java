@@ -1,5 +1,5 @@
 public class Bandit {
-    double stealMoney;
+    private double stealMoney;
 
     public Bandit(){
     }
