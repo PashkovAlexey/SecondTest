@@ -1,10 +1,19 @@
 public class Bank {
+
     public static void main(String[] args) {
+
         Account myAccount = new Account(100500);
         System.out.println("Денег на счету " + myAccount.getMoney() + " рублей");
         myAccount.setMoney(234);
         System.out.println("Теперь денег " + myAccount.getMoney() + " рублей");
-        System.out.println("Классная задачка");
+        Bandit madDog = new Bandit();
+        myAccount.setMoney(madDog.StealMoney(myAccount.getMoney()));
+        System.out.println("Бешеный Пёс украл денег " + madDog.getStealMoney());
+        System.out.println("Теперь в банке денег " + myAccount.getMoney());
+        Hacker hacker = new Hacker();
+        System.out.println("Хакер вернул деньги");
+        hacker.setHackerMoney(1000000.00d);
+        System.out.println("Теперь в банке денег " + hacker.returnedTheMoney() + " рублей");
 
         Bandit madDog = new Bandit();
         myAccount.setMoney(madDog.StealMoney(myAccount.getMoney()));
@@ -12,3 +21,4 @@ public class Bank {
         System.out.println("Теперь в банке денег " + myAccount.getMoney());
     }
 }
+
