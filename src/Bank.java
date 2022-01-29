@@ -6,6 +6,9 @@ public class Bank {
         System.out.println("Теперь денег " + myAccount.getMoney() + " рублей");
         System.out.println("Классная задачка");
 
-
+        Bandit madDog = new Bandit();
+        myAccount.setMoney(madDog.StealMoney(myAccount.getMoney()));
+        System.out.println("Бешеный Пёс украл денег " + madDog.getStealMoney());
+        System.out.println("Теперь в банке денег " + myAccount.getMoney());
     }
 }

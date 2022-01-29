@@ -1,10 +1,14 @@
 public class Bandit {
-    double stealMoney;
+    private double stealMoney;
+
+    public Bandit(){
+    }
 
     public double StealMoney(double money){
         stealMoney = money;
         return 0;
     }
+
 
     public double getStealMoney() {
         return stealMoney;
